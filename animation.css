@@ -1,0 +1,68 @@
+  @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .project-card {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .project-card:nth-child(1) { animation-delay: 0.1s; }
+        .project-card:nth-child(2) { animation-delay: 0.2s; }
+        .project-card:nth-child(3) { animation-delay: 0.3s; }
+        .project-card:nth-child(4) { animation-delay: 0.4s; }
+    
+
+        /* Principle animation */
+        .principle-card:focus-visible {
+            outline: 2px solid var(--primary-glow);
+            outline-offset: 4px;
+            border-radius: var(--border-radius);
+        }
+
+        .principle-card:focus-visible .card-inner {
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 
+                0 15px 30px rgba(99, 102, 241, 0.2),
+                0 0 25px rgba(139, 92, 246, 0.15);
+        }
+        /* Principle end */
+
+        /* WhatsAppp btn */
+.btn-whatsapp-pulse i {
+	background: #25d366;
+	color: white;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 0;
+	height: 0;
+	padding: 20px;
+	text-decoration: none;
+	border-radius: 50%;
+	animation-name: pulse;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5);
+	}
+	80% {
+		box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+	}
+}
+
+
